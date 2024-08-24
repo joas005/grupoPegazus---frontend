@@ -106,6 +106,8 @@ p {
   font-size: var(--size-2xl);
   color: var(--clr-light-green);
   font-weight: 700;
+  margin: 1em 0;
+  text-align: center;
 }
 
 .subtitulo {
@@ -156,7 +158,7 @@ ul a {
   color: var(--clr-green);
 }
 
-#cadastrar {
+.cadastrar {
   margin: 0 0.3em;
 }
 
@@ -183,7 +185,6 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em;
 }
 
 #botao_rastreiar {
@@ -208,7 +209,6 @@ input:focus {
 #funcionalidades p {
   max-width: 60ch;
   font-size: var(--size-s);
-  margin: 1rem auto;
 }
 
 #principais_funcionalidades {
@@ -229,6 +229,13 @@ input:focus {
   font-weight: 600;
   color: var(--clr-light-green);
 }
+
+/* Chamar clientes */
+
+#chamar_clientes {
+    margin-bottom: 3em;
+}
+
 
 /* Plataforma mais completa do mercado */
 
