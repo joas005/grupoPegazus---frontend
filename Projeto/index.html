@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastreio express</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <!-- Header fixo -->
+    <header class="azul">
+      <figure id="logo_container" class="item_header">
+        <img
+          id="logo"
+          alt="Logo empresa"
+          src="../Images/icons8-caminhão-50.png"
+        />
+        <h2 id="company_name">Rastreio express</h2>
+      </figure>
+
+      <!-- Navegação entre páginas -->
+      <nav class="item_header">
+        <li>
+          <ul>
+            <a href="paginas/home.html">Home</a>
+          </ul>
+          <ul>
+            <a href="paginas/sobre.html">Sobre nós</a>
+          </ul>
+          <ul>
+            <a href="paginas/parceiros.html">Parceiros</a>
+          </ul>
+          <ul>
+            <a href="paginas/ajuda.html">Ajuda</a>
+          </ul>
+        </li>
+      </nav>
+
+      <!-- Cadastro ou entrada de usuários -->
+      <form class="item_header">
+        <button id="entrar">
+          <a href="paginas/entrar.html">Entrar</a>
+        </button>
+        <button id="cadastrar">
+          <a href="paginas/cadastro.html">Cadastrar</a>
+        </button>
+      </form>
+    </header>
+
+    <!-- Corpo principal do site -->
+    <main>
+      <!-- Rastreiamento de pacotes -->
+      <section id="rastreiamento" class="container">
+        <h1 class="titulo_secao">Rastreie seu pedido!</h1>
+        <div class="input_container">
+          <input
+            type="text"
+            id="rastreio"
+            placeholder="Código de rastreiamento"
+          />
+          <button id="botao_rastreiar">
+            <img src="../Images/icons8-visita-25.png" alt="pin" />
+            RASTREAR
+          </button>
+        </div>
+
+        <figure class="container">
+          <img src="../Images/boxes.svg" alt="pilha de pacotes" />
+        </figure>
+      </section>
+
+      <!-- Sobre rastreio express -->
+      <section id="funcionalidades" class="container">
+        <h1 class="titulo_secao">
+          Veja como o Rastreio Express pode facilitar sua rotina
+        </h1>
+        <p>
+          As funcionalidades do Rastreio Express foram desenvolvidas para ajudar
+          você a organizar sua rotina lógistica.
+        </p>
+
+        <!-- Principais funcionalidade -->
+        <article id="principais_funcionalidades">
+          <!-- Funcionalidade: busca de encomenda -->
+          <div>
+            <figure class="figura_funcionalidade">
+              <img src="../Images/search.svg" alt="Ícone de busca" />
+              <figcaption>Busque por uma encomenda</figcaption>
+            </figure>
+            <p>
+              Use o Rastreio Xpress para encontrar suas encomendas. Basta colar
+              o código de rastreio no campo de buscas e aproveitar.
+            </p>
+          </div>
+
+          <!-- Funcionalidade: acompanhamento de encomendas -->
+          <div class="item_funcionalidade">
+            <figure class="figura_funcionalidade">
+              <img
+                src="../Images/phone_loc.svg"
+                alt="Ícone de acompanhamento"
+              />
+              <figcaption>Acompanhe suas encomendas</figcaption>
+            </figure>
+            <p>
+              O Rastreio Xpress foi desenvolvido para facilitar a visualização
+              de suas encomendas. Nada de atualizações misteriosas e difíceis de
+              entender.
+            </p>
+          </div>
+
+          <!-- Funcionalidade: receba notificações -->
+          <div class="item_funcionalidade">
+            <figure class="figura_funcionalidade">
+              <img
+                src="../Images/notification_bell.svg"
+                alt="Ícone de notificação"
+              />
+              <figcaption>Receba notificações</figcaption>
+            </figure>
+            <p>
+              No Rastreio Xpress você acompanha tudo o que acontece com a sua
+              encomenda diretamente no seu e-mail.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Convidas clientes à se cadastrar -->
+      <section id="chamar_clientes container">
+        <h2 class="titulo_secao">
+          O Rastreio Xpress foi desenvolvido especialmente para quem deseja usar
+          uma ferramenta simples e objetiva, sem enrolação.
+        </h2>
+        <button>
+          <a href="cadastro.html">Cadastre-se agora</a>
+        </button>
+      </section>
+
+      <!-- Plataforma mais completa do mercado -->
+      <section id="fundo_verde">
+        <article id="infos_parceiros" class="container">
+          <div id="sobre_parceiros">
+            <h2 class="subtitulo">
+              A plataforma de rastreiamento mais completa do mercado
+            </h2>
+            <p>
+              O melhor rastreio controla todos os envios postados na Azul Cargo
+              Express e Correios.
+            </p>
+            <p>
+              Porém, quem faz envios com etiquetas geradas na plataforma do
+              Melhor Envio também consegue rastrear encomendas enviadas pela
+              Jadlog, Buslog, Via Brasil e LATAM Cargo.
+            </p>
+
+            <div class="fundo_branco">
+              <img src="" alt="J&T Express" class="logo_marca" />
+              <img src="" alt="Azul Cargo" class="logo_marca" />
+              <img src="" alt="Buslog" class="logo_marca" />
+              <img src="" alt="Correios" class="logo_marca" />
+            </div>
+          </div>
+          <!-- Informações sobre a plataforma -->
+
+          <!-- Imagem -->
+          <figure id="figura_info_plataforma" class="container">
+            <img
+              src="../Images/icons8-package-delivered-100.png"
+              alt="Feliz com o pacote"
+            />
+          </figure>
+        </article>
+      </section>
+
+      <!-- Precisa de ajuda? -->
+      <section id="ajuda" class="container">
+        <div>
+          <figure class="container img_container">
+            <img src="ajuda" alt="Precisa de ajuda?" id="ajuda" />
+          </figure>
+
+          <div>
+            <h2 class="subtitulo">Precisa de ajuda com algum rastreio?</h2>
+            <p>Veja o que fazer em cada um dos casos:</p>
+          </div>
+        </div>
+
+        <!-- Carrosel de informações -->
+        <div class="carrosel container"></div>
+      </section>
+    </main>
+  </body>
+</html>
