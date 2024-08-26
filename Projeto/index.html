@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="shortcut icon" href="../Images/favicon.ico" />
   </head>
 
   <body>
@@ -23,9 +25,9 @@
 
       <!-- Navegação entre páginas -->
       <nav class="item_header">
-        <li>
+        <li class="nav_itens">
           <ul>
-            <a href="paginas/home.html">Home</a>
+            <a href="./index.html">Home</a>
           </ul>
           <ul>
             <a href="paginas/sobre.html">Sobre nós</a>
@@ -142,9 +144,9 @@
 
       <!-- Plataforma mais completa do mercado -->
       <section id="fundo_verde">
-        <article id="infos_parceiros" class="container">
-          <div id="sobre_parceiros">
-            <h2 class="subtitulo">
+        <article id="infos_parceiros" class="container inline">
+          <div class="sobre">
+            <h2 class="subtitulo" id="branco">
               A plataforma de rastreiamento mais completa do mercado
             </h2>
             <p>
@@ -157,19 +159,19 @@
               Jadlog, Buslog, Via Brasil e LATAM Cargo.
             </p>
 
-            <div class="fundo_branco">
-              <img src="" alt="J&T Express" class="logo_marca" />
-              <img src="" alt="Azul Cargo" class="logo_marca" />
-              <img src="" alt="Buslog" class="logo_marca" />
-              <img src="" alt="Correios" class="logo_marca" />
+            <div class="parceiros">
+              <img src="../Images/j&t.png" alt="J&T Express" class="logo_marca" />
+              <img src="../Images/azulcargo.jpg" alt="Azul Cargo" class="logo_marca" />
+              <img src="../Images/buslog.jpg" alt="Buslog" class="logo_marca" />
+              <img src="../Images/correios.jpg" alt="Correios" class="logo_marca" />
             </div>
           </div>
           <!-- Informações sobre a plataforma -->
 
           <!-- Imagem -->
-          <figure id="figura_info_plataforma" class="container">
+          <figure class="img_container">
             <img
-              src="../Images/icons8-package-delivered-100.png"
+              src="../Images/image_green_background.svg"
               alt="Feliz com o pacote"
             />
           </figure>
@@ -177,20 +179,78 @@
       </section>
 
       <!-- Precisa de ajuda? -->
-      <section id="ajuda" class="container">
-        <div>
-          <figure class="container img_container">
-            <img src="ajuda" alt="Precisa de ajuda?" id="ajuda" />
+      <section id="ajuda">
+        <div class="container inline">
+          <figure class="img_container">
+            <img
+              src="../Images/need_help.svg"
+              alt="Precisa de ajuda?"
+              id="ajuda"
+            />
           </figure>
 
-          <div>
+          <div class="sobre">
             <h2 class="subtitulo">Precisa de ajuda com algum rastreio?</h2>
             <p>Veja o que fazer em cada um dos casos:</p>
           </div>
         </div>
 
         <!-- Carrosel de informações -->
-        <div class="carrosel container"></div>
+        <div class="carrosel container">
+          <div class="card">
+            <img
+              src="../Images/icons8-ampulheta-50.png"
+              alt="icon"
+              class="icon"
+            />
+            <h3>Estou esperando uma encomenda</h3>
+            <p>
+              O remetente é a única pessoa que pode resolver problemas
+              relacionados ao rastreio.
+            </p>
+            <p>
+              Sugerimos que peça para a pessoa responsável pelo envio entrar em
+              contato com a gente seguindo as instruções para lojistas.
+            </p>
+          </div>
+          <div class="card">
+            <img src="../Images/icons8-caixa-64.png" alt="icon" class="icon" />
+            <h3>Enviei um pacote com etiqueta do Melhor Envio</h3>
+            <p>É muito fácil encontrar ajuda, veja só:</p>
+            <li>
+              <ul>
+                Entre na sua conta Melhor Envios;
+              </ul>
+              <ul>
+                Vá até a opção "Ajuda";
+              </ul>
+              <ul>
+                Escolha o assunto que melhor represente sua dúvida e encontre o
+                suporte que precisa.
+              </ul>
+            </li>
+          </div>
+          <div class="card">
+            <img src="../Images/icons8-recibo-60.png" alt="icon" class="icon" />
+            <h3>Comprei uma etiqueta diretamente com a transportadora</h3>
+            <p>
+              Sugerimos que entre em contato com a empresa responsável pelo
+              envio.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="../Images/icons8-bolsa-de-dinheiro-euro-64.png"
+              alt="icon"
+              class="icon"
+            />
+            <h3>Eu vou pagar alguma taxa de uso ou mensalidade?</h3>
+            <p>
+              Não! O Melhor Rastreio é totalmente grautito e não cobra
+              mensalidade nenhuma ou taxa pelos serviços.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
