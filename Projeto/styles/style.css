@@ -1,10 +1,10 @@
 :root {
-  /* Colors */
+  /* Definição de cores principais usadas no projeto */
   --clr-green: #1a9047;
   --clr-light-green: #2bc866;
   --clr-blue: #004aad;
 
-  /* Sizes */
+  /* Definição de tamanhos utilizados ao longo do projeto */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
   --size-s: 0.875rem;
@@ -25,6 +25,7 @@
 *,
 li,
 h2 {
+  /* Definição de fontes, margens e ajustes de box-sizing */
   font-family: "Helvetica Neue Bold", "Helvetica";
   margin: 0;
   line-height: calc(1em + 0.5rem);
@@ -32,12 +33,15 @@ h2 {
 }
 
 html {
+  /* Comportamento suave do scroll */
   scroll-behavior: smooth;
 }
 
 body {
+  /* Dimensões e padding padrão para o corpo da página */
   width: 100%;
   height: 100%;
+  padding-top: 4em;
 }
 
 img,
@@ -45,6 +49,7 @@ picture,
 video,
 canvas,
 svg {
+  /* Ajustes gerais para elementos de mídia */
   display: block;
   max-width: 100%;
   -webkit-user-select: none;
@@ -52,6 +57,7 @@ svg {
 }
 
 button {
+  /* Estilo padrão dos botões */
   display: inline;
   font-weight: 600;
   text-decoration: none;
@@ -67,11 +73,13 @@ button {
 }
 
 button:hover {
+  /* Efeito ao passar o mouse sobre o botão */
   transform: translateY(-3px);
 }
 
 a,
 a:visited {
+  /* Estilo padrão para links */
   font-weight: 600;
   letter-spacing: -0.05em;
   transition: color 0.3s;
@@ -79,6 +87,7 @@ a:visited {
 }
 
 p {
+  /* Largura máxima e tamanho da fonte para parágrafos */
   max-width: 60ch;
   font-size: var(--size-s);
 }
@@ -88,6 +97,7 @@ p {
 }
 
 .container {
+  /* Configurações de layout para contêineres */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -104,6 +114,7 @@ p {
 }
 
 .titulo_secao {
+  /* Estilo dos títulos das seções */
   font-size: var(--size-2xl);
   color: var(--clr-light-green);
   font-weight: 700;
@@ -119,6 +130,7 @@ p {
 }
 
 .img_container {
+  /* Estilização do contêiner de imagens */
   width: 100%;
   flex: 1;
   margin: 0;
@@ -334,6 +346,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+/* Tornando a página responsíva */
+
 /* XS */
 @media (min-width: 475px) {
   .container {
@@ -368,6 +382,9 @@ body::-webkit-scrollbar-thumb {
   }
 
   header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     flex-direction: row;
     justify-content: space-between; /* Espaça os itens igualmente */
     padding: 1em;
@@ -406,13 +423,6 @@ body::-webkit-scrollbar-thumb {
 
   button {
     font-size: var(--size-base);
-  }
-
-  #infos_parceiros {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
   }
 
   #principais_funcionalidades {
